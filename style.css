@@ -13,6 +13,13 @@ h1{
     font-size: 2.5rem;
     font-family: 'Sacramento', cursive;
 }
+#cursor {
+  position: fixed;
+  font-size: 20px;
+  color:aquamarine;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
 #theme-toggle {
   border: none;
   width: 100px;

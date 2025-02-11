@@ -13,3 +13,20 @@ const toggleBtn = document.getElementById("theme-toggle");
         }
     }
     typeWriter();
+
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    document.addEventListener("mousemove", function(e) {
+        let cursor = document.getElementById("cursor");
+        cursor.style.top = e.clientY + "px";
+        cursor.style.left = e.clientX + "px";
+    });
+
+    let cursor = document.getElementById("cursor");
+    document.addEventListener("click", function(e) {
+       
+        cursor.style.color = "coral";
+    });
+    document.addEventListener("")
+    
+    

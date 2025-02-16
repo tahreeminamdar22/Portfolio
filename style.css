@@ -157,7 +157,6 @@ font-size: 2rem;
   /* Left navigation list items */
   .leftnav li,
   .rightnav li {
-    float: none; /* Remove float for flexbox alignment */
     padding: 0;  
     margin: 0;
   }
@@ -291,4 +290,47 @@ font-size: 2rem;
   footer {
     
     color: #7B8A50;
+  }
+.backtotop{
+  height: 50px;
+  width: 50px;
+  background-color: plum;
+  color: crimson;
+  border: none;
+}
+  @media (max-width: 1050px) {
+   #project >  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Adjust column size */
+      gap: 5px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .skills-list li:hover{
+      background-color: #CCCCFF;
+      border-radius: 30px;
+  
+    }
+    .nav {
+      height: 6rem;
+    }
+    .rightnav li {
+      display: block; /* Makes each <li> take the full width */
+  }
+  
+  .rightnav li a {
+      display:inline; /* Ensures <a> also takes the full width */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+  }
+  
+
   }

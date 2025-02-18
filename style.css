@@ -51,10 +51,12 @@ h1{
 .project-card {
   background: white;
   padding: 20px;
+  transition: background-image 0.3s ease-in-out;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .project-title {
   font-size: 1.5em;
   font-weight: bold;
@@ -73,22 +75,19 @@ h1{
   gap: 15px;
  
 }
-
+.fa-square-github{
+  color:#CCCCFF;
+ 
+}
 .links a {
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 5px;
   font-size: 0.9em;
-  background-color:#bfd6c4;
+
   
 }
-.demo {
-  background-color: #28a745;
-}
 
-.github {
-  background-color: #333;
-}
 
 ul {
     list-style-type: none;
@@ -319,7 +318,7 @@ font-size: 2rem;
   
     }
     .nav {
-      height: 6rem;
+      height: 8rem;
     }
     .rightnav li {
       display: block; /* Makes each <li> take the full width */
@@ -330,6 +329,7 @@ font-size: 2rem;
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
+      
   }
   
 

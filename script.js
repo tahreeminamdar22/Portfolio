@@ -27,6 +27,13 @@ const toggleBtn = document.getElementById("theme-toggle");
        
         cursor.style.color = "coral";
     });
+   
+    // Load the particles configuration from the JSON file
+particlesJS.load('particles-js', './assets/particlesjs-config.json', function() {
+    console.log('Particles.js loaded - callback');
+  });
+  
+      
   /*
     function updateIcons() {
         const icons = document.querySelectorAll(".fa-brands, .fa-database"); // Select all brand icons

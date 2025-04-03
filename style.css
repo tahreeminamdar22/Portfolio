@@ -357,6 +357,7 @@ ul {
 }
 .hamburger {
   display: block;
+  padding: 20px;
 }
 #typing {
   height: fit-content;

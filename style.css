@@ -321,7 +321,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    max-width: 450px;
+    max-width: 300px;
     }
     .skills-list {
       display: grid;
@@ -363,5 +363,7 @@ ul {
   height: fit-content;
   width: fit-content;
 }
-
+ .bio {
+  font-size: 3.5rem;
+ }
   }

@@ -5,13 +5,13 @@ body{
     margin: 0 20px 0 20px;
     background-color: whitesmoke;
     color: black;
-    font-weight: bold;
+    font-weight:bolder;
     font-family: "Dekko", serif;
 }
 h1{
     color: #bfd6c4;
-    font-weight: bolder;
-    font-size: 2.5rem;
+    font-weight:bolder;
+    font-size: 4rem;
     font-family: 'Sacramento', cursive;
 }
 #particles-js {
@@ -23,13 +23,7 @@ h1{
   left: 0;
 }
 
-#cursor {
-  position: fixed;
-  font-size: 20px;
-  color:aquamarine;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
+
 #theme-toggle {
   border: none;
   width: 100px;
@@ -112,8 +106,8 @@ ul {
     align-items: center; /* Centers content vertically */
     margin: 0 auto; /* Center container if needed */
     padding: 10px;
-font-size: 2rem;
-   
+    font-size: 2.5rem;
+    font-weight: bold; 
   }
   #bio  h1 {
     font-weight:900;
@@ -121,18 +115,29 @@ font-size: 2rem;
   }
   /* Style for the paragraph text */
   .bio p {
-    font-size:large;
+    font-size:1.8rem;
+
     line-height: 1.5; 
     text-align: justify; 
     max-width: 600px; 
     justify-content: center;
-    font-weight: 500;
+    font-weight: bold;
   }
-  .strong:hover {
-    border: 0.2em dotted #7B8A50;
+  
+  .strong {
+    border: 1px solid #7B8A50;
     background-color: #CCCCFF;
+   color: black;
   }
-
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
   /* Styling for the navigation bar */
   .nav {
     background-color: #bfd6c4;
@@ -172,38 +177,38 @@ font-size: 2rem;
   
  li a:hover {
     background-color:  #CCCCFF;
-    border-top-left-radius: 15px;
+  
     border-bottom-right-radius: 15px;
  }
 
  
   /* Overall scrollbar */
 ::-webkit-scrollbar {
-    width: 10px; /* Width for vertical scrollbar */
-    height: 10px; /* Height for horizontal scrollbar */
+    width: 15px; /* Width for vertical scrollbar */
+    height: 5px; /* Height for horizontal scrollbar */
   }
   
   /* Background/Track */
   ::-webkit-scrollbar-track {
     background: #CCCCFF;
-    border-radius: 15px;
+    border-radius: 20px;
     /* Rounded track */
   }
   
   /* Handle/Thumb */
   ::-webkit-scrollbar-thumb {
-    background: #CCCCFF;
-    border-radius: 10px; /* Rounded thumb */
+    background:#CCCCFF;
+    border-radius: 15px; /* Rounded thumb */
   }
   
   /* Handle/Thumb on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background:  #bfd6c4;
+    background: #7B8A50;
   }
   /* Overall scrollbar */
 ::-webkit-scrollbar {
     width: 10px; /* Width for vertical scrollbar */
-    height: 3px; /* Height for horizontal scrollbar */
+    height: 1.5px; /* Height for horizontal scrollbar */
   }
   /* Skills container styling */
 .skills-container {
@@ -299,6 +304,7 @@ font-size: 2rem;
   footer {
     
     color: #7B8A50;
+    font-size: 1rem;
   }
 .backtotop{
   height: 50px;
@@ -308,6 +314,9 @@ font-size: 2rem;
   border: none;
 }
   @media (max-width: 1050px) {
+    .hamburger {
+      display: block;
+  }
    #project >  .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -327,20 +336,39 @@ font-size: 2rem;
       border-radius: 30px;
   
     }
+    /*
     .nav {
       height: 8rem;
     }
+    
     .rightnav li {
-      display: block; /* Makes each <li> take the full width */
-  }
+      display: block; 
+  } 
   
   .rightnav li a {
-      display:inline; /* Ensures <a> also takes the full width */
-      text-align: center;
+      display:inline; 
+     text-align: center;
       padding: 14px 20px;
       text-decoration: none;
       
-  }
+  } 
+  */
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navlinks.show {
+    display: flex;
+}
   
 
   }

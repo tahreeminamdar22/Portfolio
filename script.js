@@ -5,14 +5,32 @@ const toggleBtn = document.getElementById("theme-toggle");
 
     const text = "Hello, I'm Tahreem Inamdar.";
     let index = 0;
+
     function typeWriter() {
         if (index < text.length) {
             document.getElementById("typing").innerHTML += text.charAt(index);
             index++;
             setTimeout(typeWriter, 100);
+        } else {
+            setTimeout(() => {
+                document.getElementById("typing").innerHTML = ""; 
+                index = 0; // Reset index
+                typeWriter(); // Restart typing
+            }, 1000); // Pause before restarting
         }
     }
+
     typeWriter();
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".navlinks");
+    
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    });
+    
 
     document.getElementById("year").innerText = new Date().getFullYear();
 

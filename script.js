@@ -3,7 +3,7 @@ const toggleBtn = document.getElementById("theme-toggle");
         document.body.classList.toggle("dark-mode");
     });
 
-    const text = "Hello, I'm Tahreem Inamdar.";
+    const text = "Hey, I'mTahreem Inamdar.";
     let index = 0;
 
     function typeWriter() {

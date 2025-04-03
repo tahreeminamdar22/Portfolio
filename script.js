@@ -25,9 +25,17 @@ const toggleBtn = document.getElementById("theme-toggle");
     document.addEventListener("DOMContentLoaded", () => {
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".navlinks");
+        const icon = document.querySelector(".hamburger .icon");
     
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("show");
+    
+            // Toggle icon between ☰ and ✖
+            if (navLinks.classList.contains("show")) {
+                icon.innerHTML = "&#10006;"; // X icon (✖)
+            } else {
+                icon.innerHTML = "&#9776;"; // Hamburger icon (☰)
+            }
         });
     });
     

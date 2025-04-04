@@ -16,7 +16,6 @@ Welcome to my portfolio! This website showcases my projects, skills, and experie
 
 ## 🛠️ Built With  
 - **Frontend:** HTML, CSS, JavaScript  
-- **Frameworks & Libraries:** React.js (if used), Bootstrap/Tailwind (if applicable)  
 - **Deployment:** GitHub Pages  
 
 ---

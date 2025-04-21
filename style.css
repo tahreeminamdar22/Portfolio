@@ -310,20 +310,26 @@ ul {
 .fa-brands:hover, .fa-solid:hover {
   color:#7B8A50;
 }
+
+
+
   .contact-btn {
     background-color:#bfd6c4;
     color: white;
     width: 200px;
     height: 60px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
     border: 3px solid #7B8A50;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  
     font-family: "Dekko", serif;
   }
   .contact-btn:hover{
     background-color: #CCCCFF;
+      transform: scale(1.08);
+      box-shadow: 0 8px 15px rgba(0, 255, 170, 0.2);
+    
   }
   .contact-btn a {
     text-decoration: none;
@@ -390,6 +396,17 @@ ul {
   width: fit-content;
 }
  .bio {
-  font-size: 3rem;
+  font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 1.2rem;
+    text-align: center;
  }
+ .particles-js {
+  opacity: 0.7; /* tone it down on mobile */
+}
+.contact-btn {
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1.2rem;
+}
   }

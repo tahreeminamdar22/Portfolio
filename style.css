@@ -20,7 +20,9 @@ body{
   border-radius: 10px; /* Soft rounded corners */
   width: fit-content; /* Adapts to content size */
   padding: 16px; /* Adds spacing for better visuals */
+  transition: all 0.3s ease-in-out;
 }
+
 
 
 h1{
@@ -197,8 +199,8 @@ ul {
   /* Styling for the navigation bar */
   .nav {
      background-color:  #bfd6c4; 
-    
-    backdrop-filter: blur(8px); /* Subtle frosted effect */
+
+    backdrop-filter: blur(10px); /* Subtle frosted effect */
     
   
     color: black;

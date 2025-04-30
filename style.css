@@ -43,8 +43,8 @@ h1{
   
 }
 .dark-mode {
-  background: linear-gradient(225deg, #020202, #353535, #222222);
-  /*  background: linear-gradient(to right, #1f1c2c, #928dab); */
+   background: linear-gradient(225deg, #020202, #353535, #222222); 
+  /* background: linear-gradient(to right, #1f1c2c, #928dab); */
   color: #F5F5F5; 
 }
 .dark-mode .project-title{

@@ -1,9 +1,10 @@
+alert("Switch to Dark mode for better visuals");
 const toggleBtn = document.getElementById("theme-toggle");
     toggleBtn.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
     });
 
-    const text = "Hey, I'mTahreem Inamdar.";
+    const text = "👋 Hey, I'm Tahreem";
     let index = 0;
 
     function typeWriter() {
